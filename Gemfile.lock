@@ -1,3 +1,13 @@
+GIT
+  remote: https://github.com/rails/webpacker.git
+  revision: 89e4d602c29ca5cf89d7e634a7e901225d2e7a4f
+  ref: 89e4d60
+  specs:
+    webpacker (3.2.1)
+      activesupport (>= 4.2)
+      rack-proxy (>= 0.6.1)
+      railties (>= 4.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -137,10 +147,6 @@ GEM
       activemodel (>= 5.0)
       bindex (>= 0.4.0)
       railties (>= 5.0)
-    webpacker (3.2.1)
-      activesupport (>= 4.2)
-      rack-proxy (>= 0.6.1)
-      railties (>= 4.2)
     websocket-driver (0.7.0)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.3)
@@ -160,7 +166,7 @@ DEPENDENCIES
   spring-watcher-listen (~> 2.0.0)
   tzinfo-data
   web-console (>= 3.3.0)
-  webpacker
+  webpacker!
 
 RUBY VERSION
    ruby 2.5.0p0

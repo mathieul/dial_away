@@ -1,0 +1,8 @@
+.slide {
+  display: none;
+  font-size: 6rem;
+}
+
+.slide.slide--current {
+  display: block;
+}
