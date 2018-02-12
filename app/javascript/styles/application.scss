@@ -1,3 +1,6 @@
+//
+// Slideshow styles
+//
 .slide {
   display: none;
   font-size: 6rem;
@@ -5,4 +8,31 @@
 
 .slide.slide--current {
   display: block;
+}
+
+//
+// Layout styles
+//
+$top-bar-height: 60px;
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: $top-bar-height;
+
+  > .container {
+    padding: $top-bar-height 15px 0;
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: $top-bar-height;
+  line-height: $top-bar-height;
+  background-color: #f5f5f5;
 }
