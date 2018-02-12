@@ -10,6 +10,7 @@
 import { Application } from "stimulus"
 import { definitionsFromContext } from "stimulus/webpack-helpers"
 
+import "bootstrap/dist/css/bootstrap"
 import "../styles/application.scss"
 
 const application = Application.start()
