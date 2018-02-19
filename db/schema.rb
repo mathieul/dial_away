@@ -18,10 +18,14 @@ ActiveRecord::Schema.define(version: 2018_02_19_002031) do
   create_table "users", force: :cascade do |t|
     t.string "email", null: false
     t.string "name", null: false
+    t.string "password_digest", null: false
     t.string "country_code", default: "1", null: false
     t.string "phone_number", null: false
+    t.string "authy_id"
+    t.boolean "verified", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["authy_id"], name: "index_users_on_authy_id", unique: true
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
